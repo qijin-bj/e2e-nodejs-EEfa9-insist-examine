@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-qnku
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/rhtap-demo-jxwr-tenant/e2e-nodejs/nodejs-health-check-qnku@sha256:756b82a606d7e3bb43fba298338cbad2271c474210f726711a0f69c53c161dfc
+        name: my-nodejs
+        resources: {}
+status: {}
